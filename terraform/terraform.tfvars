@@ -1,5 +1,5 @@
 aws_region           = "us-east-2"
 key_name             = "FolakemiKP"
-allowed_ssh_ip       = "105.119.36.49/32"
+allowed_ssh_ip       = "105.119.10.2/32"
 instance_type_small  = "t3.micro"
 instance_type_medium = "t3.small"
