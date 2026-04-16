@@ -31,7 +31,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'tomcat-creds', usernameVariable: 'TC_USER', passwordVariable: 'TC_PASS')]) {
                     sh '''
-                        curl -s -u "$TC_USER:$TC_PASS" --upload-file app/target/java-webapp.war "http://18.221.69.98:8080/manager/text/deploy?path=/java-webapp&update=true"
+                        curl -s -u "$TC_USER:$TC_PASS" --upload-file app/target/java-webapp.war "http://172.31.38.181:8080/manager/text/deploy?path=/java-webapp&update=true"
                     '''
                 }
             }
